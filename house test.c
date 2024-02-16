@@ -44,7 +44,7 @@ int main()
     free(p3);
 
     // malloc(val), val should equal (sz2 + 8 + 15) & ~15
-    // now choose sz-8
+    // now choose sz2-8
     // p4 will pick chunk from tacahe_sz2
     __uint64_t *p4 = malloc(sz2-8); // overlap!
     assert(p4 == p2);
